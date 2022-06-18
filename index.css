@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+header {
+  margin-bottom: 1em;
+}
+main {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrap {
+  display: flex;
+  border-radius: 9px;
+}
+.wrap div{
+  min-width: 240px;
+}
+@media (max-width: 600px) {
+  .sth {
+    transition: var(--trans);
+  }
+}
+
+@media (max-width: 375px) {
+  .sth {
+    transition: var(--trans);
+  }
+}
+@media all and (max-width:760px) {
+  .wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+}
+h2 {
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 1em;
+  font-stretch: expanded;
+}
+.col1 {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2em;
+  margin: auto;
+}
+.col2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 2em;
+  margin: auto;
+}
+.col3 {
+  background-color: hsl(179, 100%, 13%);
+  padding: 2em;
+  margin: auto;
+}
+p {
+  color: hsl(0, 0%, 100%, 0.75);
+  margin-bottom: 1em;
+  font-size: 15px;
+  font-family: Lexend Deca;
+}
+button {
+  font-size: 15px;
+  border-radius: 32px;
+  background-color: hsl(0, 0%, 95%);
+
+  margin-top: 3em;
+  padding: 10px;
+  text-align: center;
+}
+.btn1 {
+  border: 1px;
+  border-color: hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
+  transition: 0.4s ease-in-out;
+}
+.btn1:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 95%);
+}
+.btn2 {
+  border: 1px;
+  border-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+  transition: 0.4s ease-in-out;
+}
+.btn2:hover {
+  border: 1px;
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 95%);
+}
+.btn3 {
+  border: 1px;
+  border-color: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
+  transition: 0.4s ease-in-out;
+}
+.btn3:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 95%);
+}
+
+a{
+  font-size: 15px;
+  border-radius: 32px;
+  background-color: hsl(0, 0%, 95%);
+
+  margin-top: 3em;
+  padding: 10px;
+  text-align: center;
+}
