@@ -7,51 +7,47 @@ body {
 }
 main {
   display: grid;
-  grid-template-areas:
-    "1 1 1 2 2"
-    "1 1 1 2 2"
-    "3 3 4 4 4"
-    "3 3 5 5 5";
-}
-main div {
-  padding: 2em;
-  text-align: center;
-}
-.g1 {
-  background-color: red;
-  grid-area: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-.g2 {
-  background-color: orange;
-  grid-area: 2;
-}
-.g3 {
-  background-color: green;
-  grid-area: 3;
-}
-.g4 {
-  background-color: rgb(50, 77, 226);
-  grid-area: 4;
-}
-.g5 {
-  background-color: rgb(50, 77, 226);
-  grid-area: 5;
+  margin: auto;
+    margin-top: 60px;
+    max-width: 700px;
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background-color: black;
-}
-.grid_container {
+.container{
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  gap: 5px;
+  grid-auto-flow: dense;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 190px 90px 90px;
+} 
+
+.item-1 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  background-color: red;
 }
-.g1 {
-  grid-column-start: ;
-} */
+.item-2 {
+  grid-column: 4;
+  background-color: orange;
+}
+.item-3{
+  grid-column: 2 span;
+  grid-row: 2 / 4;
+  background-color: green;
+}
+.item-4, .item-5{
+  grid-column: 2 span;
+  background-color: rgb(50, 77, 226);
+}
+
+@media only screen and (max-width: 600px) {
+  
+}
+
+
+body {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	line-height: 5;
+}
